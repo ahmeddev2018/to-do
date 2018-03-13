@@ -20,6 +20,8 @@ Route::auth();
 Route::get('/home', 'HomeController@index');
 
 
-
+Route::group(['middleware'=>'auth'], function (){
 Route::resource('/tasks','TasksController');
 Route::resource('/items','ItemsController');
+
+});

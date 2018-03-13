@@ -28,6 +28,7 @@
                     <thead>
                     <tr>
                         <th scope="col">Items</th>
+                        <th scope="col">Description</th>
                         <th scope="col">Edit</th>
                         <th scope="col">Delete</th>
                     </tr>
@@ -41,6 +42,7 @@
                     @foreach($items as $item)
                         <tr>
                             <td scope="row">{{$item->title}}</td>
+                            <td scope="row">{{$item->body}}</td>
 
 
                             <td><a href="{{route('items.edit',$item->id)}}">Edit</a></td>

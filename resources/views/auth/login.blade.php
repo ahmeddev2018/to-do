@@ -54,6 +54,11 @@
                                     <i class="fa fa-btn fa-sign-in"></i> Login
                                 </button>
 
+                                <fb:login-button
+                                        scope="public_profile,email"
+                                        onlogin="checkLoginState();">
+                                </fb:login-button>
+
                                 <a class="btn btn-link" href="{{ url('/password/reset') }}">Forgot Your Password?</a>
                             </div>
                         </div>

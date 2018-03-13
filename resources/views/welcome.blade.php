@@ -8,9 +8,7 @@
                 <div class="panel-heading">Welcome</div>
 
                 <div class="panel-body">
-                    Your Application's Landing Page.
-                </div>
-            </div>
+                    <h1 class="text-center ">Please login to use the App</h1>
         </div>
     </div>
 </div>

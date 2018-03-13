@@ -57,7 +57,7 @@
                         <tr>
                             <td scope="row">{{$item->title}}</td>
                             <td scope="row">{{$item->body}}</td>
-                            <td scope="row">{{$item->task->title}}</td>
+                            <td scope="row"><a href="{{route('items.show',$item->task->id)}}">{{$item->task->title}}</a></td>
                             <td><a href="{{route('items.edit',$item->id)}}">Edit</a></td>
 
 
